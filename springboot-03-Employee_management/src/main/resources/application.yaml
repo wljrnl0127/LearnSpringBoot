@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    #?serverTimezone=UTC解决时区的报错
+    url: jdbc:mysql://localhost:3306/employee_management?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    driverClassName: com.mysql.cj.jdbc.Driver
+  messages:
+    basename: i18n.login
+
+# mybatis-plus 配置日志输出
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 该配置就是将带有下划线的表字段映射为驼峰格式的实体类属性
+    map-underscore-to-camel-case: true

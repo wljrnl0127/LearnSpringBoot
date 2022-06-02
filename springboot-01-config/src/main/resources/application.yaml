@@ -1,0 +1,24 @@
+# 修改端口号
+server:
+  port: 8080
+
+debug: true
+
+# 注入到配置类中
+person:
+  name: 黄建妹
+  age: 18
+  happy: true
+  birth: 2004/09/20
+  map:
+    key: value
+    key2: value2
+  list:
+    - 黄建妹
+    - game
+    - 羽毛球
+    - 滑雪
+
+  dog:
+    name: 小黄
+    age: 18
